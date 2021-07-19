@@ -4,7 +4,7 @@ CHROME_URL_DOWNLOAD="https://dl.google.com/linux/direct/google-chrome-stable_cur
 CHROME_FILENAME="${COMMON_TEMP_DIR}/chrome_stable.deb"
 
 function chrome_install_dep() {
-    wget ${CHROME_URL_DOWNLOAD} -O ${CHROME_FILENAME}
+    wget ${CHROME_URL_DOWNLOAD} -O ${CHROME_FILENAME} >> ${COMMON_LOG_FILE}
 }
 
 function chrome_install_program() {
