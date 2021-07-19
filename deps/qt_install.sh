@@ -59,11 +59,11 @@ function qt_install_program() {
 
     rmdir make_temp; mkdir -p make_temp; cd ./make_temp
 
-    ${QT_QMAKE} ${QT_SQL_DRIVERS}/sqldrivers.pro
+    ${QT_QMAKE} ${QT_SQL_DRIVERS}/sqldrivers.pro >> ${COMMON_LOG_FILE}
 
-    make
+    make >> ${COMMON_LOG_FILE}
 
-    sudo make install
+    sudo make install >> ${COMMON_LOG_FILE}
 }
 
 infoMessage "${QT_PROGRAM_TITLE}" "Preparando a instalação das dependências."
