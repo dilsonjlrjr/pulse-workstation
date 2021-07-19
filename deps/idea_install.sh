@@ -29,4 +29,4 @@ then
     infoMessage "Error" "Ocorreu um erro ao instalar o ${IDEA_PROGRAM_NAME}."
     exit 1
 fi
-infoMessage "${IDEA_PROGRAM_TITLE}" "${IDEA_PROGRAM_NAME} instaladoscom sucesso."
+infoMessage "${IDEA_PROGRAM_TITLE}" "${IDEA_PROGRAM_NAME} instalado com sucesso."

@@ -55,7 +55,7 @@ infoMessage "wget" "wget instalado com sucesso."
 
 #instalando o dependencias genericas
 infoMessage "Deps" "Preparando a instalação de dependencias genéricas."
-if ! sudo sudo apt install apt-transport-https curl ca-certificates software-properties-common -y >> ${COMMON_LOG_FILE}
+if ! sudo sudo apt install apt-transport-https curl ca-certificates software-properties-common libkf5globalaccel-bin yakuake htop wireguard -y >> ${COMMON_LOG_FILE}
 then
     infoMessage "Error" "Ocorreu um erro ao instalar as dependencias genéricas."
     exit 1
